@@ -14,7 +14,7 @@ export default class CarouselBox extends Component {
             <Carousel>
                 <Carousel.Item>
                     <img
-                        className="d-block w-100 "
+                        className="d-block w-100 img-responsive"
                         src={bgPhysics1}
                         alt="bgPhysics1"
                     />
@@ -25,7 +25,7 @@ export default class CarouselBox extends Component {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="d-block w-100 "
+                        className="d-block w-100 img-responsive"
                         src={bgPhysics2}
                         alt="bgPhysics2"
                     />
@@ -36,7 +36,7 @@ export default class CarouselBox extends Component {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="d-block w-100 "
+                        className="d-block w-100 img-responsive"
                         src={bgPhysics3}
                         alt="bgPhysics3"
                     />
