@@ -9,6 +9,7 @@ import Contacts from '../pages/Contacts'
 import Blog from '../pages/Blog'
 import Laboratories from '../pages/Laboratories'
 import Lab1 from '../pages/labs/Lab1'
+import Lab2 from '../pages/labs/Lab2'
 
 import {generalKz} from '../recources/labData'
 
@@ -55,6 +56,7 @@ export default class Header extends Component {
                         <Route exact path="/blog" component={Blog} />
                         <Route exact path="/labs" component={Laboratories} />
                         <Route exact path="/labs/lab1" component={Lab1} />
+                        <Route exact path="/labs/lab2" component={Lab2} />
                     </Switch>
                 </Router>
             </>

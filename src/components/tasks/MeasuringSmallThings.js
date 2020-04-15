@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Table, FormControl, Col, Row, Button, Form, Card } from 'react-bootstrap'
+import { Container, Table, FormControl, Col, Row, Button } from 'react-bootstrap'
 import { ArrowRight } from 'react-bootstrap-icons';
 
 import '../../styles/styles.css'
@@ -30,8 +30,6 @@ import woodInbaker from '../../assets/lab/woodInbaker.png'
 import screwInbaker from '../../assets/lab/screwInBaker.png'
 import nutInbaker from '../../assets/lab/nutInBaker.png'
 
-
-import { generalKz } from '../../recources/labData'
 import { labTextKz } from '../../recources/labData'
 
 export default class MeasuringSmallThings extends Component {
@@ -155,7 +153,15 @@ export default class MeasuringSmallThings extends Component {
                             <img className="w-50" src={this.state.glass} />
                         </Col>
                         <Col className="m-auto">
-                            <Button variant="warning" size="lg" onClick={this.pourWater} disabled={this.state.pourWaterButton} className="text-center"><ArrowRight /></Button>
+                            <Button
+                                variant="warning"
+                                size="lg"
+                                onClick={this.pourWater}
+                                disabled={this.state.pourWaterButton}
+                                className="text-center"
+                            >
+                                <ArrowRight />
+                            </Button>
                         </Col>
                         <Col md="5">
                             <img className="w-50" src={this.state.baker} />

@@ -1,5 +1,9 @@
-.wrap{
+.wrap {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.table > thead > tr > th {
+    vertical-align: middle;
 }

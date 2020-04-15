@@ -3,20 +3,22 @@ import { Form, Button, Container, Tab, Nav, Col, Row, Accordion, Card } from 're
 
 import { labTextKz } from '../../recources/labData'
 import { generalKz } from '../../recources/labData'
-import { labData1 } from '../../recources/labData'
+import { labData2 } from '../../recources/labData'
 
 import LabDescription from '../../components/LabDescription'
-import MeasuringWater from '../../components/tasks/MeasuringWater'
-import MeasuringSmallThings from '../../components/tasks/MeasuringSmallThings'
+import MeasurePeas from '../../components/tasks/MeasurePeas'
+import MeasurePoint from '../../components/tasks/MeasurePoint'
+import MeasureScrewStep from '../../components/tasks/MeasureScrewStep'
 import Calculator from '../../components/Calculator/Calculator';
 
-export default class Lab1 extends Component {
+
+export default class Lab2 extends Component {
     render() {
         return (
-            <Container >
+            <Container>
                 <Tab.Container id="ledt-tabs-example" defaultActiveKey="1" >
                     <Row>
-                        <Col sm={3} >
+                        <Col sm={3}>
                             <Nav variant="pills" className="flex-column mt-4" >
                                 <Nav.Item >
                                     <Nav.Link eventKey="1">{labTextKz.description}</Nav.Link>
@@ -28,7 +30,10 @@ export default class Lab1 extends Component {
                                     <Nav.Link eventKey="3">2-{labTextKz.task}</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="4">{labTextKz.conslusion}</Nav.Link>
+                                    <Nav.Link eventKey="4">3-{labTextKz.task}</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link eventKey="5">{labTextKz.conslusion}</Nav.Link>
                                 </Nav.Item>
                             </Nav>
                             <Accordion>
@@ -49,15 +54,18 @@ export default class Lab1 extends Component {
                         <Col sm={9} className="mt-4">
                             <Tab.Content >
                                 <Tab.Pane eventKey="1">
-                                    <LabDescription labData={labData1} />
+                                    <LabDescription labData={labData2} />
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="2">
-                                    <MeasuringWater labData={labData1} />
+                                    <MeasurePeas labData={labData2} />
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="3">
-                                    <MeasuringSmallThings labData={labData1} />
+                                    <MeasurePoint labData={labData2} />
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="4">
+                                    <MeasureScrewStep labData={labData2} />
+                                </Tab.Pane>
+                                <Tab.Pane eventKey="5">
                                     <Form>
                                         <Form.Group controlId="formBasicFullname">
                                             <Form.Label>{generalKz.fullname}</Form.Label>
@@ -77,7 +85,6 @@ export default class Lab1 extends Component {
                     </Row>
                 </Tab.Container>
             </Container>
-
         )
     }
 }
