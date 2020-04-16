@@ -7,7 +7,6 @@ import fullBaker from '../../assets/lab/fullBaker.png'
 import glassWithWater from '../../assets/lab/glassWithWater.png'
 import barelyEmptyGlass from '../../assets/lab/barelyEmptyGlass.png'
 
-import { generalKz } from '../../recources/labData'
 import { labTextKz } from '../../recources/labData'
 
 export default class MeasuringWater extends Component {
@@ -89,9 +88,9 @@ export default class MeasuringWater extends Component {
                     </Table>
                 </Row>
                 <Row className="mb-3">
-                <Card bg="light">
-                    <Card.Body dangerouslySetInnerHTML={{ __html: this.props.labData.task1.note }}></Card.Body>
-                </Card>
+                    <Card bg="light">
+                        <Card.Body dangerouslySetInnerHTML={{ __html: this.props.labData.task1.note }}></Card.Body>
+                    </Card>
                 </Row>
                 {/* <Row className="mb-3">
                     <Form.Group className="m-auto" controlId="formBasicFinishButton" >

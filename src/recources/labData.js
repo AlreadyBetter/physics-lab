@@ -28,7 +28,8 @@ export const labTextKz = {
     progress: 'Жұмыс барысы',
     description: 'Жұмыс сипаттамасы',
     table: 'Кесте',
-    conslusion: 'Қорытынды'
+    conslusion: 'Қорытынды',
+    continue: 'Жалғастыру'
 }
 
 export const labData1 = {
