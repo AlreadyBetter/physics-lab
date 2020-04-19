@@ -92,11 +92,6 @@ export default class MeasuringWater extends Component {
                         <Card.Body dangerouslySetInnerHTML={{ __html: this.props.labData.task1.note }}></Card.Body>
                     </Card>
                 </Row>
-                {/* <Row className="mb-3">
-                    <Form.Group className="m-auto" controlId="formBasicFinishButton" >
-                        <Button variant="success" >{generalKz.finish}</Button>
-                    </Form.Group>
-                </Row> */}
             </Container>
         )
     }

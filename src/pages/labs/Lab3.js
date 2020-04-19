@@ -3,17 +3,17 @@ import { Form, Button, Container, Tab, Nav, Col, Row, Accordion, Card } from 're
 
 import { labTextKz } from '../../recources/labData'
 import { generalKz } from '../../recources/labData'
-import { labData1 } from '../../recources/labData'
+import { labData3 } from '../../recources/labData'
 
 import LabDescription from '../../components/LabDescription'
-import MeasuringWater from '../../components/tasks/MeasuringWater'
-import MeasuringSmallThings from '../../components/tasks/MeasuringSmallThings'
+import MeasuringDensityOfLiquid from '../../components/tasks/MeasuringDensityOfLiquid'
+import MeasuringDensityOfSolid from '../../components/tasks/MeasuringDensityOfSolid'
 import Calculator from '../../components/Calculator/Calculator';
 
-export default class Lab1 extends Component {
+export default class Lab3 extends Component {
     render() {
         return (
-            <Container >
+<Container >
                 <Tab.Container id="ledt-tabs-example" defaultActiveKey="1" >
                     <Row>
                         <Col sm={3} >
@@ -49,13 +49,13 @@ export default class Lab1 extends Component {
                         <Col sm={9} className="mt-4">
                             <Tab.Content >
                                 <Tab.Pane eventKey="1">
-                                    <LabDescription labData={labData1} />
+                                    <LabDescription labData={labData3} />
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="2">
-                                    <MeasuringWater labData={labData1} />
+                                    <MeasuringDensityOfSolid labData={labData3} />
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="3">
-                                    <MeasuringSmallThings labData={labData1} />
+                                    <MeasuringDensityOfLiquid labData={labData3} />
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="4">
                                     <Form>
@@ -77,6 +77,7 @@ export default class Lab1 extends Component {
                     </Row>
                 </Tab.Container>
             </Container>
+
         )
     }
 }

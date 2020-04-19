@@ -10,7 +10,7 @@ export default class LabDescription extends Component {
                 <h3 className="text-center">{this.props.labData.title}</h3>
                 <br />
                 <h5><b>{labTextKz.goals}</b>: {this.props.labData.goals}</h5>
-                <h5><b>{labTextKz.tools}</b>: {this.props.labData.tools}</h5>
+                <h5><b>{labTextKz.tools}</b>: {this.props.labData.tools.join(";\n")}</h5>
             </Container>
         )
     }
