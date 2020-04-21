@@ -2,14 +2,14 @@ import React, { Component } from 'react'
 import { Form, Button, Container, Tab, Nav, Col, Row, Accordion, Card } from 'react-bootstrap'
 
 import { generalKz } from '../../recources/labData'
-import { labData1 } from '../../recources/labData'
+import { labData4 } from '../../recources/labData'
 
 import LabDescription from '../../components/LabDescription'
-import MeasuringWater from '../../components/tasks/MeasuringWater'
-import MeasuringSmallThings from '../../components/tasks/MeasuringSmallThings'
-import Calculator from '../../components/Calculator/Calculator';
+import Calculator from '../../components/Calculator/Calculator'
+import DeterminationSpringStiffness from '../../components/tasks/DeterminationSpringStiffness'
 
-export default class Lab1 extends Component {
+
+export default class Lab4 extends Component {
     render() {
         return (
             <Container >
@@ -21,10 +21,7 @@ export default class Lab1 extends Component {
                                     <Nav.Link eventKey="1">{generalKz.description}</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="2">1-{generalKz.task}</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link eventKey="3">2-{generalKz.task}</Nav.Link>
+                                    <Nav.Link eventKey="2">{generalKz.taskUppercase}</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
                                     <Nav.Link eventKey="4">{generalKz.conslusion}</Nav.Link>
@@ -33,7 +30,7 @@ export default class Lab1 extends Component {
                             <Accordion>
                                 <Card>
                                     <Card.Header className="text-center">
-                                        <Accordion.Toggle  as={Button} variant="link" eventKey="0">
+                                        <Accordion.Toggle as={Button} variant="link" eventKey="0">
                                             {generalKz.calculator}
                                         </Accordion.Toggle>
                                     </Card.Header>
@@ -48,13 +45,10 @@ export default class Lab1 extends Component {
                         <Col sm={9} className="mt-4">
                             <Tab.Content >
                                 <Tab.Pane eventKey="1">
-                                    <LabDescription labData={labData1} />
+                                    <LabDescription labData={labData4} />
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="2">
-                                    <MeasuringWater labData={labData1} />
-                                </Tab.Pane>
-                                <Tab.Pane eventKey="3">
-                                    <MeasuringSmallThings labData={labData1} />
+                                    <DeterminationSpringStiffness labData={labData4} />
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="4">
                                     <Form>

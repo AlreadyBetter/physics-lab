@@ -4,7 +4,7 @@ import { ArrowDown, ArrowRight } from 'react-bootstrap-icons';
 
 import SolidDensityTable from '../../components/SolidDensityTable'
 
-import { labTextKz } from '../../recources/labData'
+import { generalKz } from '../../recources/labData'
 
 import beamScale from '../../assets/lab3/beamScale.png'
 import measureBrass from '../../assets/lab3/measureBrass.png'
@@ -123,7 +123,7 @@ export default class MeasuringDensityOfSolid extends Component {
                     <h4 className="text-center">{this.props.labData.task1.title}</h4>
                 </Row>
                 <Row className="mt-3">
-                    <h5><b>{labTextKz.progress}</b>:</h5>
+                    <h5><b>{generalKz.progress}</b>:</h5>
                 </Row>
                 <Row className="mt-3">
                     <h5>{this.props.labData.task1.progress[1]}</h5>

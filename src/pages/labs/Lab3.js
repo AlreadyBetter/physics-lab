@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Form, Button, Container, Tab, Nav, Col, Row, Accordion, Card } from 'react-bootstrap'
 
-import { labTextKz } from '../../recources/labData'
 import { generalKz } from '../../recources/labData'
 import { labData3 } from '../../recources/labData'
 
@@ -13,28 +12,28 @@ import Calculator from '../../components/Calculator/Calculator';
 export default class Lab3 extends Component {
     render() {
         return (
-<Container >
+            <Container >
                 <Tab.Container id="ledt-tabs-example" defaultActiveKey="1" >
                     <Row>
                         <Col sm={3} >
                             <Nav variant="pills" className="flex-column mt-4" >
                                 <Nav.Item >
-                                    <Nav.Link eventKey="1">{labTextKz.description}</Nav.Link>
+                                    <Nav.Link eventKey="1">{generalKz.description}</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="2">1-{labTextKz.task}</Nav.Link>
+                                    <Nav.Link eventKey="2">1-{generalKz.task}</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="3">2-{labTextKz.task}</Nav.Link>
+                                    <Nav.Link eventKey="3">2-{generalKz.task}</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="4">{labTextKz.conslusion}</Nav.Link>
+                                    <Nav.Link eventKey="4">{generalKz.conslusion}</Nav.Link>
                                 </Nav.Item>
                             </Nav>
                             <Accordion>
                                 <Card>
                                     <Card.Header className="text-center">
-                                        <Accordion.Toggle  as={Button} variant="link" eventKey="0">
+                                        <Accordion.Toggle as={Button} variant="link" eventKey="0">
                                             {generalKz.calculator}
                                         </Accordion.Toggle>
                                     </Card.Header>
@@ -64,7 +63,7 @@ export default class Lab3 extends Component {
                                             <Form.Control type="textarea" />
                                         </Form.Group>
                                         <Form.Group controlId="formBasicConclusion">
-                                            <Form.Label>{labTextKz.conslusion}</Form.Label>
+                                            <Form.Label>{generalKz.conslusion}</Form.Label>
                                             <Form.Control as="textarea" rows="3" />
                                         </Form.Group>
                                         <Form.Group controlId="formBasicFinishButton" >

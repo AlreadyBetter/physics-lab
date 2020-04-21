@@ -13,7 +13,7 @@ import rulerWithAnotherBolt from '../../assets/lab2/rulerWithAnotherBolt.png'
 import rulerWithBolt from '../../assets/lab2/rulerWithBolt.png'
 import rulerWithNut from '../../assets/lab2/rulerWithNut.png'
 
-import { labTextKz } from '../../recources/labData'
+import { generalKz } from '../../recources/labData'
 
 export default class MeasureScrewStep extends Component {
 
@@ -64,7 +64,7 @@ export default class MeasureScrewStep extends Component {
                     <h4 className="text-center">{this.props.labData.task3.title}</h4>
                 </Row>
                 <Row className="mt-3">
-                    <h5><b>{labTextKz.progress}</b>:</h5>
+                    <h5><b>{generalKz.progress}</b>:</h5>
                 </Row>
 
                 {/* Measure bolt step */}

@@ -9,7 +9,7 @@ import notebookAndPencil from '../../assets/lab2/notebookAndPencil.png'
 import notebookWithPoints from '../../assets/lab2/notebookWithPoints.png'
 import notebookWithRuler from '../../assets/lab2/notebookWithRuler.png'
 
-import { labTextKz } from '../../recources/labData'
+import { generalKz } from '../../recources/labData'
 
 export default class MeasurePoint extends Component {
 
@@ -45,7 +45,7 @@ export default class MeasurePoint extends Component {
                     <h4 className="text-center">{this.props.labData.task2.title}</h4>
                 </Row>
                 <Row className="mt-3">
-                    <h5><b>{labTextKz.progress}</b>:</h5>
+                    <h5><b>{generalKz.progress}</b>:</h5>
                 </Row>
                 {/* MeasurePoint */}
                 <Row>

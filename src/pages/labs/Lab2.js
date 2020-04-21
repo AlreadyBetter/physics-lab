@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Form, Button, Container, Tab, Nav, Col, Row, Accordion, Card } from 'react-bootstrap'
 
-import { labTextKz } from '../../recources/labData'
 import { generalKz } from '../../recources/labData'
 import { labData2 } from '../../recources/labData'
 
@@ -21,19 +20,19 @@ export default class Lab2 extends Component {
                         <Col sm={3}>
                             <Nav variant="pills" className="flex-column mt-4" >
                                 <Nav.Item >
-                                    <Nav.Link eventKey="1">{labTextKz.description}</Nav.Link>
+                                    <Nav.Link eventKey="1">{generalKz.description}</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="2">1-{labTextKz.task}</Nav.Link>
+                                    <Nav.Link eventKey="2">1-{generalKz.task}</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="3">2-{labTextKz.task}</Nav.Link>
+                                    <Nav.Link eventKey="3">2-{generalKz.task}</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="4">3-{labTextKz.task}</Nav.Link>
+                                    <Nav.Link eventKey="4">3-{generalKz.task}</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="5">{labTextKz.conslusion}</Nav.Link>
+                                    <Nav.Link eventKey="5">{generalKz.conslusion}</Nav.Link>
                                 </Nav.Item>
                             </Nav>
                             <Accordion>
@@ -72,7 +71,7 @@ export default class Lab2 extends Component {
                                             <Form.Control type="textarea" />
                                         </Form.Group>
                                         <Form.Group controlId="formBasicConclusion">
-                                            <Form.Label>{labTextKz.conslusion}</Form.Label>
+                                            <Form.Label>{generalKz.conslusion}</Form.Label>
                                             <Form.Control as="textarea" rows="3" />
                                         </Form.Group>
                                         <Form.Group controlId="formBasicFinishButton" >

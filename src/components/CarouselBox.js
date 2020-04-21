@@ -11,10 +11,10 @@ import '../styles/styles.css'
 export default class CarouselBox extends Component {
     render() {
         return (
-            <Carousel>
+            <Carousel className="carousel-height ">
                 <Carousel.Item>
                     <img
-                        className="d-block w-100 img-responsive"
+                        className="w-100"
                         src={bgPhysics1}
                         alt="bgPhysics1"
                     />
@@ -25,7 +25,7 @@ export default class CarouselBox extends Component {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="d-block w-100 img-responsive"
+                        className="w-100"
                         src={bgPhysics2}
                         alt="bgPhysics2"
                     />
@@ -36,7 +36,7 @@ export default class CarouselBox extends Component {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                        className="d-block w-100 img-responsive"
+                        className="w-100"
                         src={bgPhysics3}
                         alt="bgPhysics3"
                     />

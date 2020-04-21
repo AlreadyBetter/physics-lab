@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Container, Table, FormControl, Col, Row, Button } from 'react-bootstrap'
 import { ArrowDown, ArrowRight } from 'react-bootstrap-icons';
 
-import { labTextKz } from '../../recources/labData'
+import { generalKz } from '../../recources/labData'
 
 import beamScale from '../../assets/lab3/beamScale.png'
 import beamScaleFlask from '../../assets/lab3/beamScaleFlask.png'
@@ -75,7 +75,7 @@ export default class MeasuringDensityOfLiquid extends Component {
                     <h4 className="text-center">{this.props.labData.task2.title}</h4>
                 </Row>
                 <Row className="mt-3">
-                    <h5><b>{labTextKz.progress}</b>:</h5>
+                    <h5><b>{generalKz.progress}</b>:</h5>
                 </Row>
 
                 {/* Measure flask weight*/}

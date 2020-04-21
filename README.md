@@ -1,10 +1,13 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Libs
-`npm install react-router`
-`npm install react-bootstrap bootstrap`
-`npm install react-router-dom`
-`npm install react-bootstrap-icons --save`
+``` 
+npm install react-router
+npm install react-bootstrap bootstrap
+npm install react-router-dom
+npm install react-bootstrap-icons --save
+npm install recharts
+```
 
 ## Available Scripts
 

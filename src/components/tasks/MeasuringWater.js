@@ -7,7 +7,7 @@ import fullBaker from '../../assets/lab/fullBaker.png'
 import glassWithWater from '../../assets/lab/glassWithWater.png'
 import barelyEmptyGlass from '../../assets/lab/barelyEmptyGlass.png'
 
-import { labTextKz } from '../../recources/labData'
+import { generalKz } from '../../recources/labData'
 
 export default class MeasuringWater extends Component {
 
@@ -29,7 +29,7 @@ export default class MeasuringWater extends Component {
                     <h4 className="text-center">{this.props.labData.task1.title}</h4>
                 </Row>
                 <Row className="mt-3">
-                    <h5><b>{labTextKz.progress}</b>:</h5>
+                    <h5><b>{generalKz.progress}</b>:</h5>
                 </Row>
                 <Row className="mt-3">
                     <Col md="3">

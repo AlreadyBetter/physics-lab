@@ -30,7 +30,7 @@ import woodInbaker from '../../assets/lab/woodInbaker.png'
 import screwInbaker from '../../assets/lab/screwInBaker.png'
 import nutInbaker from '../../assets/lab/nutInBaker.png'
 
-import { labTextKz } from '../../recources/labData'
+import { generalKz } from '../../recources/labData'
 
 export default class MeasuringSmallThings extends Component {
 
@@ -142,7 +142,7 @@ export default class MeasuringSmallThings extends Component {
                     <h4 className="text-center">{this.props.labData.task2.title}</h4>
                 </Row>
                 <Row className="mt-3">
-                    <h5><b>{labTextKz.progress}</b>:</h5>
+                    <h5><b>{generalKz.progress}</b>:</h5>
                 </Row>
 
                 {/* Just add water */}

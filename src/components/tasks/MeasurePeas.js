@@ -17,7 +17,7 @@ import pencilWithString from '../../assets/lab2/pencilWithString.png'
 import rulerWithPencil from '../../assets/lab2/rulerWithPencil.png'
 import string from '../../assets/lab/string.png'
 
-import { labTextKz } from '../../recources/labData'
+import { generalKz } from '../../recources/labData'
 
 export default class MeasurePeas extends Component {
 
@@ -99,7 +99,7 @@ export default class MeasurePeas extends Component {
                         <h4 className="text-center">{this.props.labData.task1.title}</h4>
                     </Row>
                     <Row className="mt-3">
-                        <h5><b>{labTextKz.progress}</b>:</h5>
+                        <h5><b>{generalKz.progress}</b>:</h5>
                     </Row>
 
                     {/* Measure peas */}
