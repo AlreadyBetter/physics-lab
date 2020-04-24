@@ -20,7 +20,6 @@ export default class CarouselBox extends Component {
                     />
                     <Carousel.Caption>
                         <h3>Physics Laboratory</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cumque!</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -31,7 +30,6 @@ export default class CarouselBox extends Component {
                     />
                     <Carousel.Caption>
                         <h3>Physics Laboratory</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cumque!</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -42,7 +40,6 @@ export default class CarouselBox extends Component {
                     />
                     <Carousel.Caption>
                         <h3>Physics Laboratory</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cumque!</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

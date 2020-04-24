@@ -11,6 +11,7 @@ export default class LabDescription extends Component {
                 <br />
                 <h5><b>{generalKz.goals}</b>: {this.props.labData.goals}</h5>
                 <h5><b>{generalKz.tools}</b>: {this.props.labData.tools.join(";\n")}</h5>
+                <h5 dangerouslySetInnerHTML={{ __html: this.props.labData.desc }}></h5>
             </Container>
         )
     }

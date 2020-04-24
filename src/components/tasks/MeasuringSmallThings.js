@@ -235,7 +235,7 @@ export default class MeasuringSmallThings extends Component {
                     <Col className="m-auto" md="1">
                         <Button variant="warning" size="sm" onClick={this.bindWood} className="text-center" disabled={this.state.bindWoodButton}><ArrowRight /></Button>
                     </Col>
-                    <Col md="3" className=" wrap">
+                    <Col md="3" className="wrap">
                         <img className="w-50 m-auto" src={this.state.wood} />
                     </Col>
                     <Col className="wrap" md="1">

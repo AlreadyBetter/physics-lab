@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Table, FormControl, Col, Row, Button, Form, Card } from 'react-bootstrap'
+import { Container, Table, FormControl, Col, Row, Button, Card } from 'react-bootstrap'
 import { ArrowRight } from 'react-bootstrap-icons';
 
 import emptyBaker from '../../assets/lab/empty_baker.png'
