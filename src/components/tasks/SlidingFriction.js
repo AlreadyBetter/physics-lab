@@ -25,8 +25,8 @@ import dynamometer1 from '../../assets/lab10/dynamometer1.png'
 import GraphSlidingFriction from '../GraphSlidingFriction'
 import { ArrowDown } from 'react-bootstrap-icons'
 
-export const woodFirstPos = 297;
-export const woodEndPos = 85;
+export const woodFirstPos = 312;
+export const woodEndPos = 103;
 export const g = 9.8;
 export const m = 0.48;
 
@@ -288,7 +288,7 @@ export default class SlidingFriction extends Component {
                             </Col>
                         </Row>
                         <Row className="wrap mt-3">
-                            <img alt="wood" className="w-50 m-auto" src={this.state.wood} onClick={this.measureWood} />
+                            {this.state.wood && <img alt="wood" className="w-50 m-auto" src={this.state.wood} onClick={this.measureWood} />}
                         </Row>
                     </Col>
                     <Col sm="6" className="text-center wrap">

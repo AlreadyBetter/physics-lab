@@ -110,10 +110,10 @@ export default class DeterminationSpringStiffness extends Component {
                 </Row>
                 <Row className="mt-3 text-center">
                     <Col md="4">
-                        <img alt="spring" src={this.state.spring} onClick={this.addSpring} />
+                        {this.state.spring && <img alt="spring" src={this.state.spring} onClick={this.addSpring} />}
                     </Col>
                     <Col md="8" className="wrap">
-                        <img alt="ruler" className="img-fluid" src={this.state.ruler} onClick={this.addRuler} />
+                        {this.state.ruler && <img alt="ruler" className="img-fluid" src={this.state.ruler} onClick={this.addRuler} />}
                     </Col>
                 </Row>
                 <Row className="mt-3 text-center">

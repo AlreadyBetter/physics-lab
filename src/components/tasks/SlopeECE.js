@@ -264,7 +264,7 @@ export default class SlopeECE extends Component {
                                 </Col>
                             </Row>
                             <Row className="wrap mt-3">
-                                <img alt="wood" className="w-50 m-auto" src={this.state.wood} onClick={this.measureWood} />
+                                {this.state.wood && <img alt="wood" className="w-50 m-auto" src={this.state.wood} onClick={this.measureWood} />}
                             </Row>
                         </Col>
                         <Col sm="6" className="text-center wrap">

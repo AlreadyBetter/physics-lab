@@ -98,7 +98,7 @@ export default class MeasuringDensityOfLiquid extends Component {
                     </Col>
                 </Row>
                 <Row className="mt-5">
-                    <img className="w-75 m-auto" alt="beamScale1" src={this.state.beamScale1} />
+                    {this.state.beamScale1 && <img className="w-75 m-auto" alt="beamScale1" src={this.state.beamScale1} />}
                 </Row>
 
                 {/* Measure water volume */}
@@ -148,7 +148,7 @@ export default class MeasuringDensityOfLiquid extends Component {
                     </Col>
                 </Row>
                 <Row className="mt-5">
-                    <img className="w-75 m-auto" alt="beamScale2" src={this.state.beamScale2} />
+                    {this.state.beamScale2 && <img className="w-75 m-auto" alt="beamScale2" src={this.state.beamScale2} />}
                 </Row>
 
                 {/* Calculate density and fill table */}

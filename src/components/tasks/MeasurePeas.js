@@ -119,7 +119,7 @@ export default class MeasurePeas extends Component {
                             </Button>
                         </Row>
                         <Row className="mt-3">
-                            <img alt="ruler1" className="img-fluid" src={this.state.ruler1} />
+                            {this.state.ruler1 && <img alt="ruler1" className="img-fluid" src={this.state.ruler1} />}
                         </Row>
                     </Row>
 
@@ -143,7 +143,7 @@ export default class MeasurePeas extends Component {
                                 </Col>
                             </Row>
                             <Row className="mt-3">
-                                <img alt="ruler2" className="img-fluid" src={this.state.ruler2} />
+                                {this.state.ruler2 && <img alt="ruler2" className="img-fluid" src={this.state.ruler2} />}
                             </Row>
                         </Col>
                     </Row>
@@ -183,7 +183,7 @@ export default class MeasurePeas extends Component {
                                 </Col>
                             </Row>
                             <Row className="mt-3">
-                                <img alt="ruler3" className="img-fluid" src={this.state.ruler3} />
+                                {this.state.ruler3 && <img alt="ruler3" className="img-fluid" src={this.state.ruler3} />}
                             </Row>
                         </Col>
                     </Row>
@@ -207,7 +207,7 @@ export default class MeasurePeas extends Component {
                                     </Button>
                                 </Col>
                                 <Col sm={12} className="mt-3">
-                                    <img alt="pencil" className="img-fluid" src={this.state.pencil} />
+                                    {this.state.pencil && <img alt="pencil" className="img-fluid" src={this.state.pencil} />}
                                 </Col>
                             </Row>
                             <Row className="text-center mt-3">
@@ -223,7 +223,7 @@ export default class MeasurePeas extends Component {
                                 </Col>
                             </Row>
                             <Row className="mt-3">
-                                <img alt="ruler4" className="img-fluid" src={this.state.ruler4} />
+                                {this.state.ruler4 && <img alt="ruler4" className="img-fluid" src={this.state.ruler4} />}
                             </Row>
                         </Col>
                     </Row>

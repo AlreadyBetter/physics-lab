@@ -84,7 +84,7 @@ export default class MeasureScrewStep extends Component {
                         </Button>
                     </Row>
                     <Row className="mt-3">
-                        <img alt="ruler1" className="img-fluid" src={this.state.ruler1} />
+                        {this.state.ruler1 && <img alt="ruler1" className="img-fluid" src={this.state.ruler1} />}
                     </Row>
                 </Row>
 
@@ -136,7 +136,7 @@ export default class MeasureScrewStep extends Component {
                             </Col>
                         </Row>
                         <Row className="mt-3">
-                            <img alt="ruler2" className="img-fluid" src={this.state.ruler2} />
+                            {this.state.ruler2 && <img alt="ruler2" className="img-fluid" src={this.state.ruler2} />}
                         </Row>
                     </Col>
                 </Row>

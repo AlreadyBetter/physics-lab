@@ -129,7 +129,7 @@ export default class MeasuringDensityOfSolid extends Component {
                     <h5>{this.props.labData.task1.progress[1]}</h5>
                 </Row>
                 <Row className="mt-3">
-                    <img alt="beamScale1" className="w-75 m-auto" src={this.state.beamScale1} />
+                    {this.state.beamScale1 && <img alt="beamScale1" className="w-75 m-auto" src={this.state.beamScale1} />}
                 </Row>
 
                 {/* Measure cylinders */}
@@ -180,7 +180,7 @@ export default class MeasuringDensityOfSolid extends Component {
                             </Col>
                         </Row>
                         <Row className="mt-3">
-                            <img alt="beamScale2" className="w-75 m-auto" src={this.state.beamScale2} />
+                            {this.state.beamScale2 && <img alt="beamScale2" className="w-75 m-auto" src={this.state.beamScale2} />}
                         </Row>
                     </Col>
                 </Row>

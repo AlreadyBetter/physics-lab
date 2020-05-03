@@ -8,6 +8,7 @@ import lab2bg from '../assets/lab2/lab2bg.png'
 import lab3bg from '../assets/lab3/lab3bg.png'
 import lab4bg from '../assets/lab4/lab4bg.png'
 import lab5bg from '../assets/lab5/lab5bg.png'
+import lab6bg from '../assets/lab6/lab6bg.png'
 import lab10bg from '../assets/lab10/lab10bg.png'
 
 import '../styles/styles.css'
@@ -107,6 +108,25 @@ export default class Laboratories extends Component {
                                 </Card.Body>
                             </Card>
                         </Col>
+                        <Col md="4">
+                            <Card border="dark" className="labCard">
+                                <Card.Img
+                                    variant="top"
+                                    width={150}
+                                    height={200}
+                                    src={lab6bg}
+                                />
+                                <Card.Body>
+                                    <Card.Title>{generalKz.lab6}</Card.Title>
+                                    <Card.Text className="labCardText">
+                                        {generalKz.lab6Title}
+                                    </Card.Text>
+                                    <Button variant="dark" href="/labs/lab6">{generalKz.start}</Button>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    </Row>
+                    <Row className="mt-4">
                         <Col md="4">
                             <Card border="dark" className="labCard">
                                 <Card.Img
