@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Table, FormControl, Col, Row, Button, Form, Card } from 'react-bootstrap'
+import { Container, Table, FormControl, Col, Row, Button } from 'react-bootstrap'
 import { ArrowDown } from 'react-bootstrap-icons';
 
 import screw from '../../assets/lab2/blackScrew.png'
@@ -71,7 +71,7 @@ export default class MeasureScrewStep extends Component {
                 <Row>
                     <h5 dangerouslySetInnerHTML={{ __html: this.props.labData.task3.progress[1] }}></h5>
                     <Row className="text-center m-auto">
-                        <img className="w-50" src={bolt} />
+                        <img alt="bolt" className="w-50" src={bolt} />
                     </Row>
                     <Row className="text-center m-auto">
                         <Button
@@ -84,7 +84,7 @@ export default class MeasureScrewStep extends Component {
                         </Button>
                     </Row>
                     <Row className="mt-3">
-                        <img className="img-fluid" src={this.state.ruler1} />
+                        <img alt="ruler1" className="img-fluid" src={this.state.ruler1} />
                     </Row>
                 </Row>
 
@@ -94,13 +94,13 @@ export default class MeasureScrewStep extends Component {
                         <h5 className="mt-3">{this.props.labData.task3.progress[2]}</h5>
                         <Row className="text-center">
                             <Col sm={4}>
-                                <img className="img-fluid" src={anotherBolt} />
+                                <img alt="anotherBolt" className="img-fluid" src={anotherBolt} />
                             </Col>
                             <Col sm={4}>
-                                <img className="img-fluid" src={screw} />
+                                <img alt="screw" className="img-fluid" src={screw} />
                             </Col>
                             <Col sm={4}>
-                                <img className="img-fluid" src={nut} />
+                                <img alt="nut" className="img-fluid" src={nut} />
                             </Col>
                         </Row>
                         <Row className="text-center mt-3">
@@ -136,7 +136,7 @@ export default class MeasureScrewStep extends Component {
                             </Col>
                         </Row>
                         <Row className="mt-3">
-                            <img className="img-fluid" src={this.state.ruler2} />
+                            <img alt="ruler2" className="img-fluid" src={this.state.ruler2} />
                         </Row>
                     </Col>
                 </Row>

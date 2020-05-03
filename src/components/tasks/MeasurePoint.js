@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Table, FormControl, Col, Row, Button, Card } from 'react-bootstrap'
+import { Container, Table, FormControl, Col, Row, Button } from 'react-bootstrap'
 import { ArrowLeft } from 'react-bootstrap-icons';
 
 import '../../styles/styles.css'
@@ -22,19 +22,22 @@ export default class MeasurePoint extends Component {
     }
 
     handleClick = () => {
-        if (this.state.stage == 0) {
+        var stage = this.state.stage
+        
+        if (this.state.stage === 0) {
+            stage++
             this.setState({
                 notebookAndPencil: notebookWithPoints,
                 continueButton1: true,
-                continueButton2: false
+                continueButton2: false,
+                stage: stage
             });
-            this.state.stage++;
-        } else if (this.state.stage == 1) {
+        } else if (this.state.stage === 1) {
+            stage++
             this.setState({
                 notebookAndPencil: notebookWithRuler,
                 continueButton2: true
             });
-            this.state.stage++;
         }
     }
 
@@ -50,7 +53,7 @@ export default class MeasurePoint extends Component {
                 {/* MeasurePoint */}
                 <Row>
                     <Col sm={7} >
-                        <img src={this.state.notebookAndPencil} onClick={this.handleClick} />
+                        <img alt="notebookAndPencil" src={this.state.notebookAndPencil} onClick={this.handleClick} />
                     </Col>
                     <Col sm={5} >
                         <h5>{this.props.labData.task2.progress[1]}</h5>

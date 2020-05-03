@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Table, FormControl, Col, Row, Button, Form, Card, Image } from 'react-bootstrap'
+import { Container, Table, FormControl, Col, Row, Button, Card, Image } from 'react-bootstrap'
 import { ArrowDown } from 'react-bootstrap-icons';
 
 import Graph from '../Graph'
@@ -42,7 +42,7 @@ export default class DeterminationSpringStiffness extends Component {
     }
 
     addRuler = () => {
-        if (this.state.stage == 1) {
+        if (this.state.stage === 1) {
             this.setState({
                 tripod: tripodSpringRuler,
                 ruler: '',
@@ -52,7 +52,7 @@ export default class DeterminationSpringStiffness extends Component {
     }
 
     addSteel100g = () => {
-        if (this.state.stage == 2) {
+        if (this.state.stage === 2) {
             this.setState({
                 tripod: tripod100g
             });
@@ -60,7 +60,7 @@ export default class DeterminationSpringStiffness extends Component {
     }
 
     addSteel200g = () => {
-        if (this.state.stage == 2) {
+        if (this.state.stage === 2) {
             this.setState({
                 tripod: tripod200g
             });
@@ -68,7 +68,7 @@ export default class DeterminationSpringStiffness extends Component {
     }
 
     addSteel300g = () => {
-        if (this.state.stage == 2) {
+        if (this.state.stage === 2) {
             this.setState({
                 tripod: tripod300g
             });
@@ -105,28 +105,28 @@ export default class DeterminationSpringStiffness extends Component {
                         <h5>{this.props.labData.task.progress[4]}</h5>
                     </Col>
                     <Col md="7" className="text-center m-auto ">
-                        <img className="img-fluid" src={this.state.tripod} />
+                        <img alt="tripod" className="img-fluid" src={this.state.tripod} />
                     </Col>
                 </Row>
                 <Row className="mt-3 text-center">
                     <Col md="4">
-                        <img src={this.state.spring} onClick={this.addSpring} />
+                        <img alt="spring" src={this.state.spring} onClick={this.addSpring} />
                     </Col>
                     <Col md="8" className="wrap">
-                        <img className="img-fluid" src={this.state.ruler} onClick={this.addRuler} />
+                        <img alt="ruler" className="img-fluid" src={this.state.ruler} onClick={this.addRuler} />
                     </Col>
                 </Row>
                 <Row className="mt-3 text-center">
                     <Col md="4">
-                        <Image src={steel100g} thumbnail onClick={this.addSteel100g} />
+                        <Image alt="steel100g" src={steel100g} thumbnail onClick={this.addSteel100g} />
                         <h3>100 g</h3>
                     </Col>
                     <Col md="4" >
-                        <Image src={steel200g} thumbnail onClick={this.addSteel200g} />
+                        <Image alt="steel200g" src={steel200g} thumbnail onClick={this.addSteel200g} />
                         <h3>200 g</h3>
                     </Col>
                     <Col md="4">
-                        <Image src={steel300g} thumbnail onClick={this.addSteel300g} />
+                        <Image alt="steel300g" src={steel300g} thumbnail onClick={this.addSteel300g} />
                         <h3>300 g</h3>
                     </Col>
                 </Row>

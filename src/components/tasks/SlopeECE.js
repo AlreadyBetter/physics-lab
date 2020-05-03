@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Table, FormControl, Col, Row, Form, Card, Button } from 'react-bootstrap'
-import { ArrowDown, ArrowUp, ArrowRight } from 'react-bootstrap-icons';
+import { Container, Table, FormControl, Col, Row, Form, Button } from 'react-bootstrap'
 
 import '../../styles/styles.css'
 import { generalKz } from '../../recources/labData'
@@ -12,7 +11,6 @@ import boardMeasL from '../../assets/lab10/boardMeasL.png'
 
 import wood from '../../assets/lab10/wood2.png'
 import dynamometer from '../../assets/lab10/dynamometer.png'
-import boardBg from '../../assets/lab10/boardBg.png'
 
 import dynamometer01 from '../../assets/lab10/dynamometer0-1.png'
 import dynamometer02 from '../../assets/lab10/dynamometer0-2.png'
@@ -48,12 +46,12 @@ export default class SlopeECE extends Component {
     }
 
     measureBoard = () => {
-        if (this.state.board == board || this.state.board == boardMeasL) {
+        if (this.state.board === board || this.state.board === boardMeasL) {
             this.setState({
                 board: boardMeasH,
                 ruler: ''
             });
-        } else if (this.state.board == board || this.state.board == boardMeasH) {
+        } else if (this.state.board === board || this.state.board === boardMeasH) {
             this.setState({
                 board: boardMeasL,
                 ruler: ''
@@ -70,7 +68,10 @@ export default class SlopeECE extends Component {
     }
 
     moveWood = (e) => {
-        this.state.dynamometerMaxValue = this.calcFt();
+        const dynamometerMaxValue = this.calcFt();
+        this.setState({
+            dynamometerMaxValue: dynamometerMaxValue
+        })
         if (e.key === 'Shift' && this.state.woodPos > woodEndPos) {
             var newWoodPos = this.state.woodPos - 1;
             var newDynamometer;
@@ -126,11 +127,12 @@ export default class SlopeECE extends Component {
 
     calcFt = () => {
         var sin = this.state.woodHeight / this.state.woodLenght;
+        var cos;
         if (sin > 1) {
-            var cos = this.state.woodLenght / this.state.woodHeight;
+            cos = this.state.woodLenght / this.state.woodHeight;
             sin = Math.sqrt(1 - cos * cos);
         } else {
-            var cos = Math.sqrt(1 - sin * sin);
+            cos = Math.sqrt(1 - sin * sin);
         }
         var f = this.state.mass * g * (sin + m * cos);
         return f.toFixed(2);
@@ -138,17 +140,17 @@ export default class SlopeECE extends Component {
 
     handleChange = (event) => {
         var value = event.target.value;
-        if (event.target.name == "woodHeight") {
+        if (event.target.name === "woodHeight") {
             value = this.cantBeNegative(value);
             this.setState({
                 woodHeight: value
             });
-        } else if (event.target.name == "woodLenght") {
+        } else if (event.target.name === "woodLenght") {
             value = this.cantBeNegative(value);
             this.setState({
                 woodLenght: value
             });
-        } else if (event.target.name == "woodMass") {
+        } else if (event.target.name === "woodMass") {
             value = this.cantBeNegative(value);
             this.calcForceGravity();
             this.setState({
@@ -177,6 +179,17 @@ export default class SlopeECE extends Component {
             woodWithDynamometer: dynamometer01,
             dynamometerValue: 0
         });
+    }
+
+    addPoints = () => {
+        this.setState({
+            graphData: [
+                { 'mg, H': 0, 'x, см': 0 },
+                { 'mg, H': 2, 'x, см': 0.98 },
+                { 'mg, H': 4, 'x, см': 1.96 },
+                { 'mg, H': 6, 'x, см': 2.94 },
+            ]
+        })
     }
 
     render() {
@@ -216,10 +229,10 @@ export default class SlopeECE extends Component {
                                 </Col>
                             </Row>
                             <Row className="mt-3">
-                                <img className="w-75 m-auto" src={this.state.board} onClick={this.measureBoard} />
+                                <img alt="board" className="w-75 m-auto" src={this.state.board} onClick={this.measureBoard} />
                             </Row>
                             <Row className="mt-3">
-                                <img className="w-75 m-auto" src={this.state.ruler} onClick={this.measureBoard} />
+                                <img alt="ruler" className="w-75 m-auto" src={this.state.ruler} onClick={this.measureBoard} />
                             </Row>
                         </Col>
                     </Row>
@@ -251,11 +264,11 @@ export default class SlopeECE extends Component {
                                 </Col>
                             </Row>
                             <Row className="wrap mt-3">
-                                <img className="w-50 m-auto" src={this.state.wood} onClick={this.measureWood} />
+                                <img alt="wood" className="w-50 m-auto" src={this.state.wood} onClick={this.measureWood} />
                             </Row>
                         </Col>
                         <Col sm="6" className="text-center wrap">
-                            <img className="w-50" src={this.state.dynamometer} onClick={this.measureWood} />
+                            <img alt="dynamometer" className="w-50" src={this.state.dynamometer} onClick={this.measureWood} />
                         </Col>
                     </Row>
                     <Row className="mt-3">
@@ -265,6 +278,7 @@ export default class SlopeECE extends Component {
                             </Row>
                             <Row className="board" >
                                 <img
+                                    alt="woodWithDynamometer"
                                     className="woodWithDynamometer"
                                     style={{ top: this.state.woodPos + "px" }}
                                     src={this.state.woodWithDynamometer}

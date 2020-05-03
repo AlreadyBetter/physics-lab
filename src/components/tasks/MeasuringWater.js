@@ -33,7 +33,7 @@ export default class MeasuringWater extends Component {
                 </Row>
                 <Row className="mt-3">
                     <Col md="3">
-                        <img className="w-75" src={emptyBaker} />
+                        <img alt="emptyBaker" className="w-75" src={emptyBaker} />
                     </Col>
                     <Col md="9">
                         <h5>{this.props.labData.task1.progress[1]}</h5>
@@ -44,13 +44,13 @@ export default class MeasuringWater extends Component {
                     <h5>{this.props.labData.task1.progress[3]}</h5>
                     <Row className="text-center">
                         <Col md="5" className="my-auto ">
-                            <img className="w-50" src={this.state.glass} />
+                            <img alt="glass" className="w-50" src={this.state.glass} />
                         </Col>
                         <Col className="m-auto">
                             <Button variant="warning" size="lg" onClick={this.pourWater} className="text-center"><ArrowRight /></Button>
                         </Col>
                         <Col md="5">
-                            <img className="w-50" src={this.state.baker} />
+                            <img alt="baker" className="w-50" src={this.state.baker} />
                         </Col>
                     </Row>
                 </Row>

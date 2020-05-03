@@ -150,7 +150,7 @@ export default class MeasuringSmallThings extends Component {
                     <h5 dangerouslySetInnerHTML={{ __html: this.props.labData.task2.progress[1] }}></h5>
                     <Row className="text-center">
                         <Col md="5" className="my-auto ">
-                            <img className="w-50" src={this.state.glass} />
+                            <img alt="glass" className="w-50" src={this.state.glass} />
                         </Col>
                         <Col className="m-auto">
                             <Button
@@ -164,7 +164,7 @@ export default class MeasuringSmallThings extends Component {
                             </Button>
                         </Col>
                         <Col md="5">
-                            <img className="w-50" src={this.state.baker} />
+                            <img alt="baker" className="w-50" src={this.state.baker} />
                         </Col>
                     </Row>
                 </Row>
@@ -173,20 +173,20 @@ export default class MeasuringSmallThings extends Component {
                 <Row >
                     <h5 dangerouslySetInnerHTML={{ __html: this.props.labData.task2.progress[2] }}></h5>
                     <Col md="3" className="m-auto">
-                        <img className="w-100" src={this.state.string} />
+                        <img alt="string" className="w-100" src={this.state.string} />
                     </Col>
                     <Col className="m-auto" md="1">
                         <Button variant="warning" size="sm" onClick={this.bindAlloys} className="text-center" disabled={this.state.bindAlloysButton}><ArrowRight /></Button>
                     </Col>
                     <Col md="3" className="m-auto ">
                         <Row >
-                            <img className="w-50 m-auto" src={this.state.brass} />
+                            <img alt="brass" className="w-50 m-auto" src={this.state.brass} />
                         </Row>
                         <Row className="mt-2">
-                            <img className="w-50 m-auto" src={this.state.steel} />
+                            <img alt="steel" className="w-50 m-auto" src={this.state.steel} />
                         </Row>
                         <Row className="mt-2">
-                            <img className="w-50 m-auto" src={this.state.aluminum} />
+                            <img alt="aluminum" className="w-50 m-auto" src={this.state.aluminum} />
                         </Row>
                     </Col>
                     <Col className="wrap" md="1">
@@ -195,7 +195,7 @@ export default class MeasuringSmallThings extends Component {
                         <Button variant="warning" size="sm" onClick={this.measureAluminum} disabled={this.state.aluminumButton}><ArrowRight /></Button>
                     </Col>
                     <Col md="4" className="m-auto " >
-                        <img className="w-75" src={this.state.baker} />
+                        <img alt="baker" className="w-75" src={this.state.baker} />
                     </Col>
                     <h5 dangerouslySetInnerHTML={{ __html: this.props.labData.task2.progress[3] }}></h5>
                 </Row>
@@ -204,17 +204,17 @@ export default class MeasuringSmallThings extends Component {
                 <Row className="mt-3">
                     <h5>{this.props.labData.task2.progress[4]}</h5>
                     <Col md="3" className="m-auto">
-                        <img className="w-100" src={this.state.string} />
+                        <img alt="string" className="w-100" src={this.state.string} />
                     </Col>
                     <Col className="m-auto" md="1">
                         <Button variant="warning" size="sm" onClick={this.bindTools} className="text-center" disabled={this.state.bindToolsButton}><ArrowRight /></Button>
                     </Col>
                     <Col md="3" className=" wrap">
                         <Row className="mt-2">
-                            <img className="w-50 m-auto" src={this.state.screw} />
+                            <img alt="screw" className="w-50 m-auto" src={this.state.screw} />
                         </Row>
                         <Row className="mt-2">
-                            <img className="w-50 m-auto" src={this.state.nut} />
+                            <img alt="nut" className="w-50 m-auto" src={this.state.nut} />
                         </Row>
                     </Col>
                     <Col className="wrap" md="1">
@@ -222,7 +222,7 @@ export default class MeasuringSmallThings extends Component {
                         <Button variant="warning" size="sm" onClick={this.measureNut} disabled={this.state.nutButton}><ArrowRight /></Button>
                     </Col>
                     <Col md="4" className="m-auto " >
-                        <img className="w-75" src={this.state.baker} />
+                        <img alt="baker" className="w-75" src={this.state.baker} />
                     </Col>
                 </Row>
 
@@ -230,19 +230,19 @@ export default class MeasuringSmallThings extends Component {
                 <Row className="mt-3">
                     <h5 dangerouslySetInnerHTML={{ __html: this.props.labData.task2.progress[5] }}></h5>
                     <Col md="3" className="m-auto">
-                        <img className="w-100" src={this.state.string} />
+                        <img alt="string" className="w-100" src={this.state.string} />
                     </Col>
                     <Col className="m-auto" md="1">
                         <Button variant="warning" size="sm" onClick={this.bindWood} className="text-center" disabled={this.state.bindWoodButton}><ArrowRight /></Button>
                     </Col>
                     <Col md="3" className="wrap">
-                        <img className="w-50 m-auto" src={this.state.wood} />
+                        <img alt="wood" className="w-50 m-auto" src={this.state.wood} />
                     </Col>
                     <Col className="wrap" md="1">
                         <Button variant="warning" size="sm" onClick={this.measureWood} disabled={this.state.woodButton}><ArrowRight /></Button>
                     </Col>
                     <Col md="4" className="m-auto " >
-                        <img className="w-75" src={this.state.baker} />
+                        <img alt="baker" className="w-75" src={this.state.baker} />
                     </Col>
                     <h5>{this.props.labData.task2.progress[6]}</h5>
                 </Row>

@@ -84,7 +84,7 @@ export default class MeasuringDensityOfLiquid extends Component {
                 </Row>
                 <Row className="mt-3 text-center">
                     <Col sm="6">
-                        <img className="img-fluid w-25" src={flask} />
+                        <img alt="flask" className="img-fluid w-25" src={flask} />
                     </Col>
                     <Col sm="6" className="text-center mt-3">
                         <Button
@@ -98,20 +98,20 @@ export default class MeasuringDensityOfLiquid extends Component {
                     </Col>
                 </Row>
                 <Row className="mt-5">
-                    <img className="w-75 m-auto" src={this.state.beamScale1} />
+                    <img className="w-75 m-auto" alt="beamScale1" src={this.state.beamScale1} />
                 </Row>
 
                 {/* Measure water volume */}
                 <Row className="mt-5 text-center">
                     <h5 dangerouslySetInnerHTML={{ __html: this.props.labData.task2.progress[2] }}></h5>
                     <Col md="5" className="my-auto ">
-                        <img className="w-50" src={this.state.glass} />
+                        <img className="w-50" alt="glass" src={this.state.glass} />
                     </Col>
                     <Col className="m-auto">
                         <Button variant="warning" size="lg" onClick={this.pourWater} disabled={this.state.pourWaterButton} className="text-center"><ArrowRight /></Button>
                     </Col>
                     <Col md="5">
-                        <img className="w-50 m-auto" src={this.state.baker1} />
+                        <img className="w-50 m-auto" alt="baker1" src={this.state.baker1} />
                     </Col>
                 </Row>
 
@@ -119,7 +119,7 @@ export default class MeasuringDensityOfLiquid extends Component {
                 <Row className="mt-5 text-center">
                     <h5 dangerouslySetInnerHTML={{ __html: this.props.labData.task2.progress[3] }}></h5>
                     <Col md="5" className="my-auto ">
-                        <img className="w-50" src={this.state.baker2} />
+                        <img className="w-50" alt="baker2" src={this.state.baker2} />
                     </Col>
                     <Col className="m-auto">
                         <Button
@@ -132,7 +132,7 @@ export default class MeasuringDensityOfLiquid extends Component {
                         </Button>
                     </Col>
                     <Col md="5" className="text-center m-auto">
-                        <img className="w-75 m-auto" src={this.state.flask} />
+                        <img className="w-75 m-auto" alt="flask" src={this.state.flask} />
                     </Col>
                 </Row>
                 <Row className="mt-3 text-center">
@@ -148,7 +148,7 @@ export default class MeasuringDensityOfLiquid extends Component {
                     </Col>
                 </Row>
                 <Row className="mt-5">
-                    <img className="w-75 m-auto" src={this.state.beamScale2} />
+                    <img className="w-75 m-auto" alt="beamScale2" src={this.state.beamScale2} />
                 </Row>
 
                 {/* Calculate density and fill table */}

@@ -106,7 +106,7 @@ export default class MeasurePeas extends Component {
                     <Row>
                         <h5>{this.props.labData.task1.progress[1]}</h5>
                         <Row className="text-center m-auto">
-                            <img src={this.state.peas} />
+                            <img alt="peas" src={this.state.peas} />
                         </Row>
                         <Row className="text-center m-auto">
                             <Button
@@ -119,7 +119,7 @@ export default class MeasurePeas extends Component {
                             </Button>
                         </Row>
                         <Row className="mt-3">
-                            <img className="img-fluid" src={this.state.ruler1} />
+                            <img alt="ruler1" className="img-fluid" src={this.state.ruler1} />
                         </Row>
                     </Row>
 
@@ -129,7 +129,7 @@ export default class MeasurePeas extends Component {
                             <h5>{this.props.labData.task1.progress[2]}</h5>
                             <Row className="text-center mt-3">
                                 <Col sm={6}>
-                                    <img src={this.state.peas} />
+                                    <img alt="peas" src={this.state.peas} />
                                 </Col>
                                 <Col sm={6}>
                                     <Button
@@ -143,7 +143,7 @@ export default class MeasurePeas extends Component {
                                 </Col>
                             </Row>
                             <Row className="mt-3">
-                                <img className="img-fluid" src={this.state.ruler2} />
+                                <img alt="ruler2" className="img-fluid" src={this.state.ruler2} />
                             </Row>
                         </Col>
                     </Row>
@@ -154,10 +154,10 @@ export default class MeasurePeas extends Component {
                             <h5 className="mt-3">{this.props.labData.task1.progress[3]}</h5>
                             <Row className="text-center">
                                 <Col sm={6}>
-                                    <img src={this.state.shots} />
+                                    <img alt="shots" src={this.state.shots} />
                                 </Col>
                                 <Col sm={6}>
-                                    <img src={this.state.millets} />
+                                    <img alt="millets" src={this.state.millets} />
                                 </Col>
                             </Row>
                             <Row className="text-center mt-3">
@@ -183,7 +183,7 @@ export default class MeasurePeas extends Component {
                                 </Col>
                             </Row>
                             <Row className="mt-3">
-                                <img className="img-fluid" src={this.state.ruler3} />
+                                <img alt="ruler3" className="img-fluid" src={this.state.ruler3} />
                             </Row>
                         </Col>
                     </Row>
@@ -194,7 +194,7 @@ export default class MeasurePeas extends Component {
                             <h5>{this.props.labData.task1.progress[4]}</h5>
                             <Row className="text-center m-auto">
                                 <Col sm={6} className="mt-3">
-                                    <img src={this.state.string} />
+                                    <img alt="string" src={this.state.string} />
                                 </Col>
                                 <Col sm={6} className="m-auto text-center">
                                     <Button
@@ -207,7 +207,7 @@ export default class MeasurePeas extends Component {
                                     </Button>
                                 </Col>
                                 <Col sm={12} className="mt-3">
-                                    <img className="img-fluid" src={this.state.pencil} />
+                                    <img alt="pencil" className="img-fluid" src={this.state.pencil} />
                                 </Col>
                             </Row>
                             <Row className="text-center mt-3">
@@ -223,7 +223,7 @@ export default class MeasurePeas extends Component {
                                 </Col>
                             </Row>
                             <Row className="mt-3">
-                                <img className="img-fluid" src={this.state.ruler4} />
+                                <img alt="ruler4" className="img-fluid" src={this.state.ruler4} />
                             </Row>
                         </Col>
                     </Row>

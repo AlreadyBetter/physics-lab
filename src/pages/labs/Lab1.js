@@ -7,7 +7,7 @@ import { labData1 } from '../../recources/labData'
 import LabDescription from '../../components/LabDescription'
 import MeasuringWater from '../../components/tasks/MeasuringWater'
 import MeasuringSmallThings from '../../components/tasks/MeasuringSmallThings'
-import Calculator from '../../components/Calculator/Calculator';
+import Calculator from '../../components/Calculator/Calculator'
 
 export default class Lab1 extends Component {
     render() {
@@ -33,14 +33,12 @@ export default class Lab1 extends Component {
                             <Accordion>
                                 <Card>
                                     <Card.Header className="text-center">
-                                        <Accordion.Toggle  as={Button} variant="link" eventKey="0">
+                                        <Accordion.Toggle as={Button} variant="link" eventKey="0">
                                             {generalKz.calculator}
                                         </Accordion.Toggle>
                                     </Card.Header>
                                     <Accordion.Collapse eventKey="0">
-                                        <Card.Text>
-                                            <Calculator />
-                                        </Card.Text>
+                                        <Calculator />
                                     </Accordion.Collapse>
                                 </Card>
                             </Accordion>

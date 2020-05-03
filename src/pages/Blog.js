@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Body, Row, Col, Media, ListGroup, Card } from 'react-bootstrap'
+import { Container, Row, Col, ListGroup, Card } from 'react-bootstrap'
 
 import BlogPreview from '../components/BlogPreview'
 

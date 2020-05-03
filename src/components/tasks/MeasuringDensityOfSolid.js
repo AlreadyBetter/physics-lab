@@ -129,7 +129,7 @@ export default class MeasuringDensityOfSolid extends Component {
                     <h5>{this.props.labData.task1.progress[1]}</h5>
                 </Row>
                 <Row className="mt-3">
-                    <img className="w-75 m-auto" src={this.state.beamScale1} />
+                    <img alt="beamScale1" className="w-75 m-auto" src={this.state.beamScale1} />
                 </Row>
 
                 {/* Measure cylinders */}
@@ -138,13 +138,13 @@ export default class MeasuringDensityOfSolid extends Component {
                         <h5 className="mt-3">{this.props.labData.task1.progress[2]}</h5>
                         <Row className="text-center">
                             <Col sm={4}>
-                                <img className="img-fluid w-50" src={brass} />
+                                <img alt="brass" className="img-fluid w-50" src={brass} />
                             </Col>
                             <Col sm={4}>
-                                <img className="img-fluid w-50" src={steel} />
+                                <img alt="steel" className="img-fluid w-50" src={steel} />
                             </Col>
                             <Col sm={4}>
-                                <img className="img-fluid w-50" src={aluminum} />
+                                <img alt="aluminum" className="img-fluid w-50" src={aluminum} />
                             </Col>
                         </Row>
                         <Row className="text-center mt-3">
@@ -180,7 +180,7 @@ export default class MeasuringDensityOfSolid extends Component {
                             </Col>
                         </Row>
                         <Row className="mt-3">
-                            <img className="w-75 m-auto" src={this.state.beamScale2} />
+                            <img alt="beamScale2" className="w-75 m-auto" src={this.state.beamScale2} />
                         </Row>
                     </Col>
                 </Row>
@@ -188,18 +188,18 @@ export default class MeasuringDensityOfSolid extends Component {
                 {/* Fill measuring */}
                 <h5>{this.props.labData.task1.progress[3]}</h5>
                 <Row className="mt-3">
-                    <img className="w-25 m-auto" src={emptyBaker} />
+                    <img alt="emptyBaker" className="w-25 m-auto" src={emptyBaker} />
                 </Row>
                 <Row className="mt-3 text-center">
                     <h5 dangerouslySetInnerHTML={{ __html: this.props.labData.task1.progress[4] }}></h5>
                     <Col md="5" className="my-auto ">
-                        <img className="w-50" src={this.state.glass} />
+                        <img alt="glass" className="w-50" src={this.state.glass} />
                     </Col>
                     <Col className="m-auto">
                         <Button variant="warning" size="lg" onClick={this.pourWater} disabled={this.state.pourWaterButton} className="text-center"><ArrowRight /></Button>
                     </Col>
                     <Col md="5">
-                        <img className="w-50 m-auto" src={this.state.baker1} />
+                        <img alt="baker1" className="w-50 m-auto" src={this.state.baker1} />
                     </Col>
                 </Row>
 
@@ -207,20 +207,20 @@ export default class MeasuringDensityOfSolid extends Component {
                 <Row >
                     <h5 dangerouslySetInnerHTML={{ __html: this.props.labData.task1.progress[5] }}></h5>
                     <Col md="3" className="m-auto">
-                        <img className="w-100" src={string} />
+                        <img alt="bakerstring1" className="w-100" src={string} />
                     </Col>
                     <Col className="m-auto" md="1">
                         <Button variant="warning" size="sm" onClick={this.bindAlloys} className="text-center" disabled={this.state.bindAlloysButton}><ArrowRight /></Button>
                     </Col>
                     <Col md="3" className="m-auto ">
                         <Row >
-                            <img className="w-50 m-auto" src={this.state.brass} />
+                            <img alt="brass" className="w-50 m-auto" src={this.state.brass} />
                         </Row>
                         <Row className="mt-2">
-                            <img className="w-50 m-auto" src={this.state.steel} />
+                            <img alt="steel" className="w-50 m-auto" src={this.state.steel} />
                         </Row>
                         <Row className="mt-2">
-                            <img className="w-50 m-auto" src={this.state.aluminum} />
+                            <img alt="aluminum" className="w-50 m-auto" src={this.state.aluminum} />
                         </Row>
                     </Col>
                     <Col className="wrap" md="1">
@@ -229,7 +229,7 @@ export default class MeasuringDensityOfSolid extends Component {
                         <Button variant="warning" size="sm" onClick={this.measureAluminum} disabled={this.state.aluminumButton}><ArrowRight /></Button>
                     </Col>
                     <Col md="4" className="m-auto " >
-                        <img className="w-75" src={this.state.baker2} />
+                        <img alt="baker2" className="w-75" src={this.state.baker2} />
                     </Col>
                     <h5 className="mt-3" dangerouslySetInnerHTML={{ __html: this.props.labData.task1.progress[6] }}></h5>
                     <h5 dangerouslySetInnerHTML={{ __html: this.props.labData.task1.progress[7] }}></h5>

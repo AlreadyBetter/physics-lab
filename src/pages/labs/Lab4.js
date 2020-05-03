@@ -28,16 +28,14 @@ export default class Lab4 extends Component {
                                 </Nav.Item>
                             </Nav>
                             <Accordion>
-                                <Card>
+                                <Card tag="div">
                                     <Card.Header className="text-center">
                                         <Accordion.Toggle as={Button} variant="link" eventKey="0">
                                             {generalKz.calculator}
                                         </Accordion.Toggle>
                                     </Card.Header>
                                     <Accordion.Collapse eventKey="0">
-                                        <Card.Text>
-                                            <Calculator />
-                                        </Card.Text>
+                                        <Calculator />
                                     </Accordion.Collapse>
                                 </Card>
                             </Accordion>
