@@ -14,6 +14,9 @@ import Lab3 from '../pages/labs/Lab3'
 import Lab4 from '../pages/labs/Lab4'
 import Lab5 from '../pages/labs/Lab5'
 import Lab6 from '../pages/labs/Lab6'
+import Lab7 from '../pages/labs/Lab7'
+import Lab8 from '../pages/labs/Lab8'
+import Lab9 from '../pages/labs/Lab9'
 import Lab10 from '../pages/labs/Lab10'
 
 import {generalKz} from '../recources/labData'
@@ -66,6 +69,9 @@ export default class Header extends Component {
                         <Route exact path="/labs/lab4" component={Lab4} />
                         <Route exact path="/labs/lab5" component={Lab5} />
                         <Route exact path="/labs/lab6" component={Lab6} />
+                        <Route exact path="/labs/lab7" component={Lab7} />
+                        <Route exact path="/labs/lab8" component={Lab8} />
+                        <Route exact path="/labs/lab9" component={Lab9} />
                         <Route exact path="/labs/lab10" component={Lab10} />
                     </Switch>
                 </Router>

@@ -4,7 +4,15 @@
     justify-content: space-around;
 }
 
+.w-10 {
+    width: 10% !important;
+}
+
 .table>thead>tr>th {
+    vertical-align: middle;
+}
+
+.table>tbody>tr>td {
     vertical-align: middle;
 }
 

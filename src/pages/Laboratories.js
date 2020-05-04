@@ -9,6 +9,9 @@ import lab3bg from '../assets/lab3/lab3bg.png'
 import lab4bg from '../assets/lab4/lab4bg.png'
 import lab5bg from '../assets/lab5/lab5bg.png'
 import lab6bg from '../assets/lab6/lab6bg.png'
+import lab7bg from '../assets/lab/lab1bg.jpg'
+import lab8bg from '../assets/lab/lab1bg.jpg'
+import lab9bg from '../assets/lab/lab1bg.jpg'
 import lab10bg from '../assets/lab10/lab10bg.png'
 
 import '../styles/styles.css'
@@ -122,6 +125,59 @@ export default class Laboratories extends Component {
                                         {generalKz.lab6Title}
                                     </Card.Text>
                                     <Button variant="dark" href="/labs/lab6">{generalKz.start}</Button>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    </Row>
+                    <Row className="mt-4">
+                    <Col md="4">
+                            <Card border="dark" className="labCard">
+                                <Card.Img
+                                    variant="top"
+                                    width={150}
+                                    height={200}
+                                    src={lab7bg}
+                                />
+                                <Card.Body>
+                                    <Card.Title>{generalKz.lab7}</Card.Title>
+                                    <Card.Text className="labCardText">
+                                        {generalKz.lab7Title}
+                                    </Card.Text>
+                                    <Button variant="dark" href="/labs/lab7">{generalKz.start}</Button>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                        <Col md="4">
+                            <Card border="dark" className="labCard">
+                                <Card.Img
+                                    variant="top"
+                                    width={150}
+                                    height={200}
+                                    src={lab8bg}
+                                />
+                                <Card.Body>
+                                    <Card.Title>{generalKz.lab8}</Card.Title>
+                                    <Card.Text className="labCardText">
+                                        {generalKz.lab8Title}
+                                    </Card.Text>
+                                    <Button variant="dark" href="/labs/lab8">{generalKz.start}</Button>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                        <Col md="4">
+                            <Card border="dark" className="labCard">
+                                <Card.Img
+                                    variant="top"
+                                    width={150}
+                                    height={200}
+                                    src={lab9bg}
+                                />
+                                <Card.Body>
+                                    <Card.Title>{generalKz.lab9}</Card.Title>
+                                    <Card.Text className="labCardText">
+                                        {generalKz.lab9Title}
+                                    </Card.Text>
+                                    <Button variant="dark" href="/labs/lab9">{generalKz.start}</Button>
                                 </Card.Body>
                             </Card>
                         </Col>

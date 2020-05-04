@@ -29,7 +29,7 @@ export default class ArchimedesPrinciple extends Component {
         super(props);
         this.state = {
             baker: baker,
-            bakerValuer: 45,
+            bakerValue: 45,
             dynamometer: dynamometer,
             dynamometerValue: 0,
             glass: glass,
@@ -44,25 +44,25 @@ export default class ArchimedesPrinciple extends Component {
             case 'brass':
                 this.setState({
                     baker: brassInbaker,
-                    bakerValuer: 58.8
+                    bakerValue: 58.8
                 })
                 break;
             case 'cube':
                 this.setState({
                     baker: cubeInbaker,
-                    bakerValuer: 55
+                    bakerValue: 55
                 })
                 break;
             case 'screw':
                 this.setState({
                     baker: screwInBaker,
-                    bakerValuer: 47
+                    bakerValue: 47
                 })
                 break;
             case 'baker':
                 this.setState({
                     baker: baker,
-                    bakerValuer: 45
+                    bakerValue: 45
                 })
                 break;
             default:
@@ -150,7 +150,7 @@ export default class ArchimedesPrinciple extends Component {
                     {/* Measuring density */}
                     <Row>
                         <h5>{this.props.labData.task.progress[1]}</h5>
-                        <h6><u>{generalKz.bakerValuer}: {this.state.bakerValuer} мл</u></h6>
+                        <h6><u>{generalKz.bakerValue}: {this.state.bakerValue} мл</u></h6>
                     </Row>
                     <Row className="mt-3">
                         <Col sm="6" className="wrap">
