@@ -7,6 +7,7 @@ npm install react-bootstrap bootstrap
 npm install react-router-dom
 npm install react-bootstrap-icons --save
 npm install recharts
+npm install @react-pdf/renderer --save
 ```
 
 ## Available Scripts

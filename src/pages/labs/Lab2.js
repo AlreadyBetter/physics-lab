@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Form, Button, Container, Tab, Nav, Col, Row, Accordion, Card } from 'react-bootstrap'
+import { Button, Container, Tab, Nav, Col, Row, Accordion, Card } from 'react-bootstrap'
 
 import { generalKz } from '../../recources/labData'
 import { labData2 } from '../../recources/labData'
@@ -9,6 +9,7 @@ import MeasurePeas from '../../components/tasks/MeasurePeas'
 import MeasurePoint from '../../components/tasks/MeasurePoint'
 import MeasureScrewStep from '../../components/tasks/MeasureScrewStep'
 import Calculator from '../../components/Calculator/Calculator';
+import Conclusion from '../../components/Conclusion'
 
 
 export default class Lab2 extends Component {
@@ -63,19 +64,7 @@ export default class Lab2 extends Component {
                                     <MeasureScrewStep labData={labData2} />
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="5">
-                                    <Form>
-                                        <Form.Group controlId="formBasicFullname">
-                                            <Form.Label>{generalKz.fullname}</Form.Label>
-                                            <Form.Control type="textarea" />
-                                        </Form.Group>
-                                        <Form.Group controlId="formBasicConclusion">
-                                            <Form.Label>{generalKz.conslusion}</Form.Label>
-                                            <Form.Control as="textarea" rows="3" />
-                                        </Form.Group>
-                                        <Form.Group controlId="formBasicFinishButton" >
-                                            <Button variant="success" >{generalKz.finish}</Button>
-                                        </Form.Group>
-                                    </Form>
+                                    <Conclusion />
                                 </Tab.Pane>
                             </Tab.Content>
                         </Col>
