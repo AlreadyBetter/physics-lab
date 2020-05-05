@@ -8,7 +8,6 @@ import LabDescription from '../../components/LabDescription'
 import Calculator from '../../components/Calculator/Calculator'
 import DeterminationSpringStiffness from '../../components/tasks/DeterminationSpringStiffness'
 
-
 export default class Lab4 extends Component {
     render() {
         return (

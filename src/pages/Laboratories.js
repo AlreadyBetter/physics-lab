@@ -11,7 +11,7 @@ import lab5bg from '../assets/lab5/lab5bg.png'
 import lab6bg from '../assets/lab6/lab6bg.png'
 import lab7bg from '../assets/lab7/lab7bg.png'
 import lab8bg from '../assets/lab8/lab8bg.png'
-import lab9bg from '../assets/lab/lab1bg.jpg'
+import lab9bg from '../assets/lab9/lab9bg.png'
 import lab10bg from '../assets/lab10/lab10bg.png'
 
 import '../styles/styles.css'
